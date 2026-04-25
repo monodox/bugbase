@@ -1,0 +1,13 @@
+{
+  "name": "@bugbase/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "bin": {
+    "bugbase": "./bin/bugbase.js"
+  },
+  "scripts": {
+    "test": "node -e \"console.log('No tests configured')\""
+  }
+}
+
