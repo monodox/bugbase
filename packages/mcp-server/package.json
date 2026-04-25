@@ -1,12 +1,35 @@
 {
-  "name": "@bugbase/mcp-server",
+  "name": "@monodox/bugbase-mcp-server",
   "version": "0.1.0",
-  "private": true,
+  "description": "MCP server for exposing Bugbase security tools to agent clients.",
   "type": "commonjs",
   "main": "./src/index.js",
+  "license": "MIT",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "security",
+    "bugbase",
+    "agent-tools"
+  ],
+  "homepage": "https://ritza.monodox.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monodox/bugbase.git",
+    "directory": "packages/mcp-server"
+  },
+  "bugs": {
+    "url": "https://github.com/monodox/bugbase/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "node ./src/index.js",
     "test": "node -e \"console.log('No tests configured')\""
   }
 }
-

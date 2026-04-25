@@ -1,13 +1,38 @@
 {
-  "name": "@bugbase/cli",
+  "name": "@monodox/bugbase",
   "version": "0.1.0",
-  "private": true,
+  "description": "Bugbase CLI for CVE scanning, secret detection, and predictive security analysis.",
   "type": "commonjs",
+  "license": "MIT",
   "bin": {
     "bugbase": "./bin/bugbase.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "security",
+    "cli",
+    "cve",
+    "secrets",
+    "devsecops",
+    "bugbase"
+  ],
+  "homepage": "https://ritza.monodox.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monodox/bugbase.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/monodox/bugbase/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "test": "node -e \"console.log('No tests configured')\""
   }
 }
-
