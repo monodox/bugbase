@@ -4,18 +4,19 @@
 
 Bugbase is an open-source CLI tool built by the Ritza team. It is designed to make vulnerability hunting part of the normal developer workflow by scanning for known CVEs, exposed secrets, and AI-powered predictive security signals.
 
-This repository is currently a small monorepo with one main package:
+This repository is a monorepo with the following packages:
 
-- `packages/cli`: the Bugbase command-line application
+- `packages/node`: the Bugbase Node.js CLI (npm)
+- `packages/python`: the Bugbase Python CLI (pip)
 
 Every finding is intended to be scored and ranked locally so developers get a clear, gamified view of repository security health without requiring an account or dashboard.
 
 ## Repository Layout
 
-- `packages/cli/bin`: CLI entry point
-- `packages/cli/src/commands`: top-level CLI commands
-- `packages/cli/src/scanners`: scanning engines and integrations
-- `packages/cli/src/reporters`: terminal and JSON output adapters
+- `packages/node/bin`: CLI entry point
+- `packages/node/src/commands`: top-level CLI commands
+- `packages/node/src/scanners`: scanning engines and integrations
+- `packages/node/src/reporters`: terminal and JSON output adapters
 - `.github/workflows`: CI definitions
 
 ## Build And Test Commands
@@ -76,4 +77,8 @@ The repository is still in scaffold stage, so some commands may be placeholders 
 
 ## Package-Specific Instructions
 
-This repository includes nested agent instructions. When working inside `packages/cli`, also read `packages/cli/AGENTS.md` and treat the closer file as the source of package-specific guidance.
+This repository includes nested agent instructions. When working inside a package directory, also read its `AGENTS.md` and treat the closer file as the source of package-specific guidance.
+
+- `packages/node/AGENTS.md`
+- `packages/python/AGENTS.md`
+- `packages/mcp-server/AGENTS.md`

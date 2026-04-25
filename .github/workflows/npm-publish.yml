@@ -6,11 +6,12 @@ on:
       package:
         description: "Workspace package to publish"
         required: true
-        default: "cli"
+        default: "node"
         type: choice
         options:
-          - cli
+          - node
           - mcp-server
+          - python
 
 jobs:
   publish:
@@ -35,7 +36,7 @@ jobs:
         run: npm test
 
       - name: Publish CLI package
-        if: inputs.package == 'cli'
+        if: inputs.package == 'node'
         run: npm publish --workspace @monodox/bugbase --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -45,3 +46,26 @@ jobs:
         run: npm publish --workspace @monodox/bugbase-mcp-server --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Setup Python
+        if: inputs.package == 'python'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python build tools
+        if: inputs.package == 'python'
+        run: pip install build twine
+
+      - name: Build Python package
+        if: inputs.package == 'python'
+        run: python -m build
+        working-directory: packages/python
+
+      - name: Publish Python package
+        if: inputs.package == 'python'
+        run: twine upload dist/*
+        working-directory: packages/python
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}

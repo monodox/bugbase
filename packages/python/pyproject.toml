@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bugbase"
+version = "0.1.0"
+description = "Bugbase CLI for CVE scanning, secret detection, and predictive security analysis."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+keywords = ["security", "cli", "cve", "secrets", "devsecops", "bugbase"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://ritza.monodox.com"
+Repository = "https://github.com/monodox/bugbase"
+Issues = "https://github.com/monodox/bugbase/issues"
+
+[project.scripts]
+bugbase = "bugbase.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

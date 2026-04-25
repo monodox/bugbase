@@ -28,9 +28,12 @@ Site: `https://ritza.monodox.com`
 
 ## Project Areas
 
-- CLI commands live in `packages/cli/src/commands`
-- Scanners live in `packages/cli/src/scanners`
-- Output formatters live in `packages/cli/src/reporters`
+- Node CLI commands live in `packages/node/src/commands`
+- Node scanners live in `packages/node/src/scanners`
+- Node output formatters live in `packages/node/src/reporters`
+- Python CLI commands live in `packages/python/src/bugbase/commands`
+- Python scanners live in `packages/python/src/bugbase/scanners`
+- Python output formatters live in `packages/python/src/bugbase/reporters`
 
 ## Reporting Issues
 

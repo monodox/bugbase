@@ -40,8 +40,10 @@ The codebase is not yet a complete production implementation. The repository str
 bugbase/
 |-- .github/workflows/ci.yml
 |-- packages/
-|   |-- cli/
+|   |-- node/
 |   |   |-- bin/
+|   |   `-- src/
+|   |-- python/
 |   |   `-- src/
 |   `-- mcp-server/
 |       `-- src/
@@ -56,7 +58,7 @@ bugbase/
 
 ## Packages
 
-### `packages/cli`
+### `packages/node`
 
 The CLI package is the main user-facing application.
 
@@ -72,6 +74,17 @@ Planned command areas include:
 - `auth`: configure API credentials when integrations require them
 - `scan`: run the main scan workflow
 - `bounties`: existing scaffold name that may be renamed as scoring and ranking behavior is finalized
+
+### `packages/python`
+
+The Python package is the pip-installable equivalent of the Node CLI.
+
+It currently includes placeholders for:
+
+- command modules under `src/bugbase/commands`
+- scanner modules under `src/bugbase/scanners`
+- reporter modules under `src/bugbase/reporters`
+- configuration, constants, and API helpers
 
 ### `packages/mcp-server`
 
@@ -147,6 +160,12 @@ Start the MCP server scaffold:
 
 ```bash
 npm run start --workspace @bugbase/mcp-server
+```
+
+Install the Python package in editable mode:
+
+```bash
+pip install -e packages/python
 ```
 
 At the moment, some package scripts are placeholders because the repository is still at scaffold stage.
@@ -241,7 +260,8 @@ General questions:
 This repository includes agent instructions to help coding agents work effectively in the monorepo.
 
 - Root instructions: [AGENTS.md](D:\Projects\bugbase\AGENTS.md)
-- CLI package instructions: [packages/cli/AGENTS.md](D:\Projects\bugbase\packages\cli\AGENTS.md)
+- Node CLI package instructions: [packages/node/AGENTS.md](D:\Projects\bugbase\packages\node\AGENTS.md)
+- Python CLI package instructions: [packages/python/AGENTS.md](D:\Projects\bugbase\packages\python\AGENTS.md)
 - MCP package instructions: [packages/mcp-server/AGENTS.md](D:\Projects\bugbase\packages\mcp-server\AGENTS.md)
 
 ## Roadmap Snapshot

@@ -1,16 +1,18 @@
 {
   "name": "@monodox/bugbase",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Bugbase CLI for CVE scanning, secret detection, and predictive security analysis.",
   "type": "commonjs",
   "license": "MIT",
   "bin": {
-    "bugbase": "./bin/bugbase.js"
+    "bugbase": "bin/bugbase.js"
   },
   "files": [
     "bin",
     "src",
-    "README.md"
+    "README.md",
+    "LICENSE",
+    ".env.example"
   ],
   "keywords": [
     "security",
@@ -24,7 +26,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/monodox/bugbase.git",
-    "directory": "packages/cli"
+    "directory": "packages/node"
   },
   "bugs": {
     "url": "https://github.com/monodox/bugbase/issues"

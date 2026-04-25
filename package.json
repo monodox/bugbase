@@ -7,6 +7,7 @@
   "scripts": {
     "test": "npm run test --workspaces --if-present",
     "publish:cli": "npm publish --workspace @monodox/bugbase --access public",
-    "publish:mcp": "npm publish --workspace @monodox/bugbase-mcp-server --access public"
+    "publish:mcp": "npm publish --workspace @monodox/bugbase-mcp-server --access public",
+    "publish:python": "cd packages/python && python -m build && twine upload dist/*"
   }
 }

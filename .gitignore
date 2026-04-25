@@ -18,6 +18,12 @@ coverage/
 *.tgz
 bugbase-0.1.0.tgz
 
+# Python build artifacts
+*.egg-info/
+build/
+__pycache__/
+*.pyc
+
 # OS and editor files
 .DS_Store
 Thumbs.db
