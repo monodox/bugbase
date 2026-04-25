@@ -37,7 +37,7 @@ async function main() {
   console.log(
     JSON.stringify(
       {
-        name: "@bugbase/mcp-server",
+        name: "@monodox/bugbase-mcp-server",
         status: "ready",
         tools: tools.map((tool) => tool.name)
       },

@@ -25,7 +25,7 @@ Run these commands from the repository root unless a task is scoped to a package
 
 - `npm install`: install workspace dependencies
 - `npm test`: run tests across all workspaces
-- `npm run test --workspace @bugbase/cli`: run CLI package tests only
+- `npm run test --workspace @monodox/bugbase`: run CLI package tests only
 
 The repository is still in scaffold stage, so some commands may be placeholders until implementation lands.
 

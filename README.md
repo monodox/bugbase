@@ -152,14 +152,14 @@ npm test
 Run package-specific tests:
 
 ```bash
-npm run test --workspace @bugbase/cli
-npm run test --workspace @bugbase/mcp-server
+npm run test --workspace @monodox/bugbase
+npm run test --workspace @monodox/bugbase-mcp-server
 ```
 
 Start the MCP server scaffold:
 
 ```bash
-npm run start --workspace @bugbase/mcp-server
+npm run start --workspace @monodox/bugbase-mcp-server
 ```
 
 Install the Python package in editable mode:

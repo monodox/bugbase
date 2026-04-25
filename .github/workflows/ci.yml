@@ -29,5 +29,5 @@ jobs:
         run: npm test
 
       - name: Smoke test MCP server entry point
-        run: npm run start --workspace @bugbase/mcp-server
+        run: npm run start --workspace @monodox/bugbase-mcp-server
 

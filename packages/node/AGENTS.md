@@ -2,7 +2,7 @@
 
 ## Package Overview
 
-`@bugbase/cli` is the command-line package for Bugbase. It owns command dispatch, scanner orchestration, reporting, local configuration, and API client integration.
+`@monodox/bugbase` is the command-line package for Bugbase. It owns command dispatch, scanner orchestration, reporting, local configuration, and API client integration.
 
 ## Directory Guidance
 
@@ -18,7 +18,7 @@
 
 Run these from the repository root or from this package directory as appropriate.
 
-- `npm run test --workspace @bugbase/cli`
+- `npm run test --workspace @monodox/bugbase`
 - `npm test`
 
 The current package scripts are placeholders, so if you introduce real behavior, update the package scripts to match.

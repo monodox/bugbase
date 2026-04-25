@@ -2,7 +2,7 @@
 
 ## Package Overview
 
-`@bugbase/mcp-server` exposes Bugbase capabilities as MCP tools for agent clients.
+`@monodox/bugbase-mcp-server` exposes Bugbase capabilities as MCP tools for agent clients.
 
 ## Directory Guidance
 

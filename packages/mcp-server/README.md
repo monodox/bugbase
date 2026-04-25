@@ -1,4 +1,4 @@
-# @bugbase/mcp-server
+# @monodox/bugbase-mcp-server
 
 MCP server scaffold for exposing Bugbase security analysis through MCP-compatible clients such as Claude Desktop, Cursor, and other agent environments.
 
@@ -14,13 +14,13 @@ From the repository root:
 
 ```bash
 npm install
-npm run test --workspace @bugbase/mcp-server
+npm run test --workspace @monodox/bugbase-mcp-server
 ```
 
 To start the package directly:
 
 ```bash
-npm run start --workspace @bugbase/mcp-server
+npm run start --workspace @monodox/bugbase-mcp-server
 ```
 
 ## Connection Notes
