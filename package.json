@@ -1,6 +1,5 @@
 {
-  "name": "bugbase",
-  "private": true,
+  "name": "@monodox/bugbase",
   "version": "0.1.0",
   "workspaces": [
     "packages/*"
